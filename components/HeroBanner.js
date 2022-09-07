@@ -13,7 +13,7 @@ const HeroBanner = ({heroBanner}) => {
                 <h1 style={{fontSize:'calc(50px + 5vw)',fontWeight:800 , margin:0}}>{heroBanner.largeText1}</h1>
                 <img src={urlFor(heroBanner.image)} alt ='headphones' className="hero-banner-image"/>
                 <div>
-                    <Link href={`/product/${heroBanner.product}`}>
+                    <Link href={`/`}>
                         <button type='button'>{heroBanner.buttonText}</button>
                     </Link>
                     <div className="desc">
