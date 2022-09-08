@@ -15,7 +15,7 @@ const HeroBanner = ({ heroBanner }) => {
                     <img src={urlFor(heroBanner.image)} alt='headphones' className="hero-banner-image" />
                 </Link>
                 <div>
-                    <Link href={`/product/${heroBanner.product}`}>
+                    <Link href={`/product/apple-airpods-max`}>
                         <button type='button'>{heroBanner.buttonText}</button>
                     </Link>
                     <div className="desc">
@@ -27,5 +27,10 @@ const HeroBanner = ({ heroBanner }) => {
         </div>
     );
 }
+<<<<<<< HEAD
 
 export default HeroBanner;
+=======
+ 
+export default HeroBanner;
+>>>>>>> 047987a3d47bd6c372a9d7b8017de083aafb2fa8
