@@ -27,10 +27,5 @@ const HeroBanner = ({ heroBanner }) => {
         </div>
     );
 }
-<<<<<<< HEAD
-
 export default HeroBanner;
-=======
  
-export default HeroBanner;
->>>>>>> 047987a3d47bd6c372a9d7b8017de083aafb2fa8
