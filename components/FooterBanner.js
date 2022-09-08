@@ -16,7 +16,7 @@ const FooterBanner = ({footerBanner:{discount,largeText1,largeText2,saleTime,des
                     <p>{smallText}</p>
                     <h3>{midText}</h3>
                     <p>{desc}</p>
-                    <Link href={`/`}>
+                    <Link href={`/product/apple-airpods-max`}>
                         <button type='button'>{buttonText}</button>
                     </Link>
                 </div>
