@@ -2,6 +2,7 @@ import Link from "next/link";
 import {AiOutlineShopping} from 'react-icons/ai'
 import { useStateContext } from "../Context/Context";
 import Cart from "./Cart";
+import png from "../public/ecommerce.png"
 
 const Navbar = () => {
     const { showCart , setShowCart , totalQuantities } = useStateContext()
@@ -9,6 +10,7 @@ const Navbar = () => {
     return ( 
         <div className="navbar-container">
             <p>
+                <img src={png} href="/" />
                 <Link href='/'>Ecommerce</Link>
             </p>
             <button type='button' className="cart-icon" onClick={()=>setShowCart(true)}>
