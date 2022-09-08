@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { urlFor } from "../LIB/client";
 
-const FooterBanner = ({footerBanner:{discount,largeText1,largeText2,saleTime,desc,smallText,midText,product,buttonText,image}}) => {
+const FooterBanner = ({ footerBanner: { discount, largeText1, largeText2, saleTime, desc, smallText, midText, product, buttonText, image } }) => {
 
-    return ( 
+    return (
         <div className="footer-banner-container">
             <div className="banner-desc">
                 <div className="left">
@@ -20,10 +20,12 @@ const FooterBanner = ({footerBanner:{discount,largeText1,largeText2,saleTime,des
                         <button type='button'>{buttonText}</button>
                     </Link>
                 </div>
-                <img src={urlFor(image)} className='footer-banner-image' width={'350px'}/>
+                <Link href={`/product/${product}`}>
+                    <img src={urlFor(image)} className='footer-banner-image' width={'350px'} />
+                </Link>
             </div>
         </div>
-     );
+    );
 }
- 
+
 export default FooterBanner;
